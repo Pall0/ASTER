@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.magfra.aster.IndirizziActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Dati di Residenza: "
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/indirizzo_residenza"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:hint="Indirizzo"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"/>
+
+            <EditText
+                android:id="@+id/cap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:hint="C.A.P."
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="5" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:lines="1"
+                android:maxLines="1"
+                android:id="@+id/comune_residenza"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="Comune"
+                android:inputType="textCapSentences"
+                android:imeOptions="actionNext" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Provincia:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:lines="1"
+                android:maxLines="1"
+                android:id="@+id/prov_residenza"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:ems="2"
+                android:inputType="textCapCharacters"
+                android:imeOptions="actionNext"
+                android:maxLength="2" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Contatti: "
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:lines="1"
+                android:maxLines="1"
+                android:id="@+id/cellulare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:hint="Cellulare"
+                android:imeOptions="actionNext"
+                android:inputType="phone"/>
+
+            <EditText
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLines="1"
+                android:id="@+id/fisso"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:hint="Teleono Fisso"
+                android:imeOptions="actionNext" />
+
+        </LinearLayout>
+
+        <EditText
+            android:lines="1"
+            android:maxLines="1"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="\@ Indirizzo e-mail"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxEms="30"
+            android:maxLength="30"
+            android:minEms="10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/password"
+                android:lines="1"
+                android:maxLines="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="Password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/conf_psw"
+                android:lines="1"
+                android:maxLines="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:hint="Conferma password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Dati Bancari: "
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:lines="1"
+            android:maxLines="1"
+            android:id="@+id/iban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:hint="IBAN"
+            android:imeOptions="actionDone"
+            android:inputType="textCapCharacters"
+            android:maxEms="27"
+            android:maxLength="27"
+            android:minEms="27" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/indietro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indietro" />
+
+            <Button
+                android:id="@+id/conf_dati_res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="Registrati" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.magfra.aster.DatiAnagraficiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Inserisci i tuoi dati anagrafici:"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nome_ins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Nome"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/cognome_ins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Cognome"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Data di Nascita:  "
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/data_nascita"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="GG/MM/AAAA"
+                android:imeOptions="actionNext"
+                android:inputType="date"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="Sesso:"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/sesso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <RadioButton
+                    android:id="@+id/femmina"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="F" />
+
+                <RadioButton
+                    android:id="@+id/maschio"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="M" />
+
+            </RadioGroup>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_weight="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="Provincia:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/prov_nascita"
+                android:layout_width="wrap_content"
+                android:layout_height="63dp"
+                android:layout_weight="1"
+                android:ems="2"
+                android:gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:inputType="textCapCharacters"
+                android:maxLength="2" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/comune_nascita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Comune di Nascita"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/cf_dip"
+            android:inputType="textCapCharacters"
+            android:imeOptions="actionDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Codice Fiscale"
+            android:maxLength="16" />
+
+        <Button
+            android:id="@+id/conf_anagraf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Continua\nregisrazione"
+
+            />
+    </LinearLayout>
+
+</ScrollView>

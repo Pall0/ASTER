@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.magfra.aster.UserAreaActivity">
+
+    <TextView
+        android:id="@+id/benvenuto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Benvenuto in Aster!"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textColor="@android:color/black"/>
+    <Button android:id="@+id/regis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Richiedi\n Rimborso"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/esci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Esci" />
+
+</RelativeLayout>
